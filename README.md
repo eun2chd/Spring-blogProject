@@ -3,7 +3,7 @@
 - JAVA 11v
 - MySQL
 - Spring boot STS
-# 스프링 의존성 설정 #
+### 스프링 의존성 설정 ###
 - Spring boot DevTools
 - Lombok
 - Spring Data JPA
