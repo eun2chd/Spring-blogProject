@@ -14,9 +14,28 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HttpControllerTest {
-	// http://localhost:8080/http/get
+	
+	private static final String TAG = "HttpControllerTest : ";
+	// http://localhost:8002/blog/http/lombok
+	@GetMapping("http/lombok")
+	private String lombokTest() {
+		Member m = Member.builder().username("ssar")
+								   .password("1234")
+								   .email("tdc8165@naver.com")
+								   .build();
+				
+		System.out.println(TAG + "getter : " + m.getUsername());
+		m.setUsername("cos");
+		System.out.println(TAG + "setter : " + m.getUsername());
+		return "lombok test 완료";
+	}
+	
+	// http://localhost:8002/blog/http/get
 	@GetMapping("/http/get")
 	public String getTest(Member m) {
+	
+		
+		
 		return "get요청 : " + m.getId() + "," + m.getUsername() + "," + m.getPassword() + "," + m.getEmail();
 	}
 	// http://localhost:8080/http/post
