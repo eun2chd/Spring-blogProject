@@ -43,6 +43,8 @@ public class Board {
 	@ColumnDefault("0")
 	private int count; // 조회수
 	
+	// Many = Board, User = One
+	// Board 테이블의 userId 컬럼은 User 테이블의 Id를 참조하고 있다.!
 	@ManyToOne(fetch = FetchType.EAGER) // Many = Many, User = one / 한명의 유저는 여러개의 게시글을 적을 수 있다.
 	@JoinColumn(name = "userId")
 	private User user; // DB는 오브젝트를 저장불가, FK, 자바는 오브젝트를 저장가능

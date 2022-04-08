@@ -35,6 +35,7 @@ public class Reply {
 	@JoinColumn(name = "boardId")
 	private Board board;
 	
+	// Reply 테이블의 userId 컬럼은 User 테이블의 Id 를 참조하고 있다.
 	@ManyToOne // 하나의 유저는 여러개의 답변을 달수 있다.
 	@JoinColumn(name = "userId")
 	private User user;
