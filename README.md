@@ -13,3 +13,10 @@
 - Spring Web
 ### 템플릿 엔진 ###
 - jsp
+
+# DB 셋팅 #
+- User ( 사용자 정보 )
+- Board ( 게시판 정보 )
+- Repley ( 답글 정보 )
+
+### FK KEY ###
