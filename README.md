@@ -19,7 +19,8 @@
 - Board ( 게시판 정보 )
 - Repley ( 답글 정보 )
 ##
-### FK KEY ###
+# FK KEY #
 ![image](https://user-images.githubusercontent.com/92193144/162448840-08e46589-4405-45c4-bed8-914be16b326b.png)
 - 하나의 유저는 여러개의 게시글을 삽입할 수 있다.
 - 하나의 유저는 여러개의 댓글을 적을 수 있다.
+- ##
